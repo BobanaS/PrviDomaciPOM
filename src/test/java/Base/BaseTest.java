@@ -1,9 +1,6 @@
 package Base;
 
-import Pages.ABTestingPage;
-import Pages.AddRemovePage;
-import Pages.CheckBoxesPage;
-import Pages.HomePage;
+import Pages.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,20 +16,23 @@ public class BaseTest {
     public ABTestingPage abTestingPage;
     public CheckBoxesPage checkBoxesPage;
     public AddRemovePage addRemovePage;
-
+    public BasicAuthPage basicAuthPage;
+    public FormAuthPage formAuthPage;
 
     @BeforeClass
     public void setUp() {
         WebDriverManager.chromedriver().setup();
-        this.homePage=new HomePage(driver);
-        this.abTestingPage=new ABTestingPage(driver);
-        this.checkBoxesPage=new CheckBoxesPage(driver);
-        this.addRemovePage=new AddRemovePage(driver);
+        this.homePage = new HomePage(driver);
+        this.abTestingPage = new ABTestingPage(driver);
+        this.checkBoxesPage = new CheckBoxesPage(driver);
+        this.addRemovePage = new AddRemovePage(driver);
+        this.basicAuthPage = new BasicAuthPage(driver);
+        this.formAuthPage = new FormAuthPage(driver);
     }
 
-  /*  @AfterClass
-    public void closeUP(){
+    @AfterClass
+    public void closeUP() {
         driver.quit();
     }
-*/
+
 }

@@ -4,21 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43345de1-8b4f-4fb0-9dfc-ade3806dc5c2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Base/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/ABTestingPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/AddRemovePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/CheckBoxesPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/CheckBoxesTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/GoToABTestingPageTest.java" afterDir="false" />
+    <list default="true" id="43345de1-8b4f-4fb0-9dfc-ade3806dc5c2" name="Changes" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/FormAuthPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/BasicAuthTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/FormAuthTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/BasicAuthPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/BasicAuthPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +27,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "BobanaS"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/BobanaS/PrviDomaciPOM.git",
+    "accountId": "dc63998e-4a9b-409d-82f5-9eea3aa29fbc"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -50,7 +54,9 @@
     "TestNG.AddRemoveTests.checkIfYouAreOnAddRemove.executor": "Run",
     "TestNG.AddRemoveTests.executor": "Run",
     "TestNG.AddRemoveTests.isDeleteButtonDisplayed.executor": "Run",
+    "TestNG.BasicAuthTest.executor": "Run",
     "TestNG.CheckBoxesTest.executor": "Run",
+    "TestNG.FormAuthTest.LogIn.executor": "Run",
     "TestNG.GoToABTestingPageTest.executor": "Run",
     "TestNG.GoToABTestingPageTest.goToABTesting.executor": "Run",
     "TestNG.GoToABTestingPageTest.userIsOnABTestPage.executor": "Run",
@@ -59,7 +65,7 @@
     "onboarding.tips.debug.path": "C:/Users/Acer/IdeaProjects/PrviDomaciPOM/src/main/java/org/example/Main.java"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.AddRemoveTests">
+  <component name="RunManager" selected="TestNG.FormAuthTest.LogInwithWrongUsername">
     <configuration name="AddRemoveTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PrviDomaciPOM" />
       <extension name="coverage">
@@ -71,24 +77,6 @@
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.AddRemoveTests" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddRemoveTests.checkIfYouAreOnAddRemove" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PrviDomaciPOM" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.AddRemoveTests" />
-      <option name="METHOD_NAME" value="checkIfYouAreOnAddRemove" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -113,7 +101,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckBoxesTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="BasicAuthTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PrviDomaciPOM" />
       <extension name="coverage">
         <pattern>
@@ -122,7 +110,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.CheckBoxesTest" />
+      <option name="MAIN_CLASS_NAME" value="Tests.BasicAuthTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -130,7 +118,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GoToABTestingPageTest.userIsOnABTestPage" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="FormAuthTest.LogIn" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PrviDomaciPOM" />
       <extension name="coverage">
         <pattern>
@@ -139,8 +127,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.GoToABTestingPageTest" />
-      <option name="METHOD_NAME" value="userIsOnABTestPage" />
+      <option name="MAIN_CLASS_NAME" value="Tests.FormAuthTest" />
+      <option name="METHOD_NAME" value="LogIn" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FormAuthTest.LogInwithWrongUsername" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PrviDomaciPOM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.FormAuthTest" />
+      <option name="METHOD_NAME" value="LogInwithWrongUsername" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -150,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.FormAuthTest.LogInwithWrongUsername" />
+        <item itemvalue="TestNG.FormAuthTest.LogIn" />
+        <item itemvalue="TestNG.BasicAuthTest" />
         <item itemvalue="TestNG.AddRemoveTests" />
         <item itemvalue="TestNG.AddRemoveTests.isDeleteButtonDisplayed" />
-        <item itemvalue="TestNG.AddRemoveTests.checkIfYouAreOnAddRemove" />
-        <item itemvalue="TestNG.CheckBoxesTest" />
-        <item itemvalue="TestNG.GoToABTestingPageTest.userIsOnABTestPage" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +173,28 @@
       <option name="presentableId" value="Default" />
       <updated>1717858229992</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1717869537805</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1717869537805</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1717869642195</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717869642195</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
