@@ -1,19 +1,19 @@
 package Tests;
 
 import Base.BaseTest;
+import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
 
 public class AddRemoveTests extends BaseTest {
-    @BeforeTest
+    @BeforeMethod
     public void pageSetUp() {
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
         driver.get("https://the-internet.herokuapp.com/");
 
     }
@@ -32,5 +32,14 @@ public class AddRemoveTests extends BaseTest {
         addRemovePage.clickOnAddButton();
         wait = new WebDriverWait(driver, Duration.ofSeconds(3));
         Assert.assertTrue(addRemovePage.getDeleteButton().isDisplayed());
+    }
+
+    @Test(priority = 30)
+    public void isDeleteButtonWorking() {
+        homePage.clickOnLinkText("Add/Remove Elements");
+        addRemovePage.clickOnAddButton();
+        addRemovePage.clickOnDeleteButton();
+        addRemovePage.addRemovewait();
+        Assert.assertFalse(addRemovePage.displayDelete());
     }
 }

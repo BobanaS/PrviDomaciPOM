@@ -22,17 +22,19 @@ public class BaseTest {
     @BeforeClass
     public void setUp() {
         WebDriverManager.chromedriver().setup();
+        this.driver=new ChromeDriver();
+        driver.manage().window().maximize();
         this.homePage = new HomePage(driver);
         this.abTestingPage = new ABTestingPage(driver);
         this.checkBoxesPage = new CheckBoxesPage(driver);
         this.addRemovePage = new AddRemovePage(driver);
         this.basicAuthPage = new BasicAuthPage(driver);
-
+        this.formAuthPage = new FormAuthPage(driver);
     }
 
-    @AfterClass
+   /* @AfterClass
     public void closeUP() {
         driver.quit();
-    }
+    }*/
 
 }

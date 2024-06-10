@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43345de1-8b4f-4fb0-9dfc-ade3806dc5c2" name="Changes" comment="Dodatak">
+    <list default="true" id="43345de1-8b4f-4fb0-9dfc-ade3806dc5c2" name="Changes" comment="Gotovo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/AddRemovePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/AddRemovePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AddRemoveTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/AddRemoveTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/BasicAuthTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/BasicAuthTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/CheckBoxesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/CheckBoxesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/FormAuthTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/FormAuthTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/GoToABTestingPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/GoToABTestingPageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +56,7 @@
     &quot;TestNG.AddRemoveTests.checkIfYouAreOnAddRemove.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.AddRemoveTests.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.AddRemoveTests.isDeleteButtonDisplayed.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AddRemoveTests.isDeleteButtonWorking.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.BasicAuthTest.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.CheckBoxesTest.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.FormAuthTest.LogIn.executor&quot;: &quot;Run&quot;,
@@ -66,7 +72,58 @@
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Acer/IdeaProjects/PrviDomaciPOM/src/main/java/org/example/Main.java&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.FormAuthTest">
+  <component name="RunManager" selected="TestNG.GoToABTestingPageTest">
+    <configuration name="AddRemoveTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PrviDomaciPOM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.AddRemoveTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BasicAuthTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PrviDomaciPOM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.BasicAuthTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckBoxesTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="PrviDomaciPOM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.CheckBoxesTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FormAuthTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PrviDomaciPOM" />
       <extension name="coverage">
@@ -84,7 +141,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FormAuthTest.LogIn" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GoToABTestingPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PrviDomaciPOM" />
       <extension name="coverage">
         <pattern>
@@ -93,63 +150,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.FormAuthTest" />
-      <option name="METHOD_NAME" value="LogIn" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FormAuthTest.LogInwithWrongPassword" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PrviDomaciPOM" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.FormAuthTest" />
-      <option name="METHOD_NAME" value="LogInwithWrongPassword" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FormAuthTest.LogInwithWrongUsername" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PrviDomaciPOM" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.FormAuthTest" />
-      <option name="METHOD_NAME" value="LogInwithWrongUsername" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FormAuthTest.LogInwithWrongUsernameAndPassword" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PrviDomaciPOM" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.FormAuthTest" />
-      <option name="METHOD_NAME" value="LogInwithWrongUsernameAndPassword" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="Tests.GoToABTestingPageTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -158,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.GoToABTestingPageTest" />
         <item itemvalue="TestNG.FormAuthTest" />
-        <item itemvalue="TestNG.FormAuthTest.LogInwithWrongUsernameAndPassword" />
-        <item itemvalue="TestNG.FormAuthTest.LogInwithWrongPassword" />
-        <item itemvalue="TestNG.FormAuthTest.LogInwithWrongUsername" />
-        <item itemvalue="TestNG.FormAuthTest.LogIn" />
+        <item itemvalue="TestNG.CheckBoxesTest" />
+        <item itemvalue="TestNG.BasicAuthTest" />
+        <item itemvalue="TestNG.AddRemoveTests" />
       </list>
     </recent_temporary>
   </component>
@@ -199,13 +201,22 @@
       <option name="project" value="LOCAL" />
       <updated>1717872109109</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Gotovo">
+      <option name="closed" value="true" />
+      <created>1718012213104</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718012213104</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Dodatak" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dodatak" />
+    <MESSAGE value="Gotovo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gotovo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
