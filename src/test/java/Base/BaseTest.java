@@ -27,7 +27,7 @@ public class BaseTest {
         this.checkBoxesPage = new CheckBoxesPage(driver);
         this.addRemovePage = new AddRemovePage(driver);
         this.basicAuthPage = new BasicAuthPage(driver);
-        this.formAuthPage = new FormAuthPage(driver);
+
     }
 
     @AfterClass
